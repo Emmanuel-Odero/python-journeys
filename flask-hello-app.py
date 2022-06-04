@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres@127.0.0.1:5432/example2'
+app.config['SQLALCHEMY_DATABASE_URI']='postgresql://user1:password@localhost/sampledb'
 db = SQLAlchemy(app)
 
 class Person(db.Model):
@@ -16,4 +16,4 @@ db.create_all()
 
 @app.route('/')
 def index():
-    return 'Hello Python!'
+    return 'Hello Python Python world!'
