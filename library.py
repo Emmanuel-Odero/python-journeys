@@ -5,7 +5,7 @@ class Books:
         self.pages = pages
         self.edition = edition
 
-book1 = Books("The Beginning of the End")
-book2 = Books("Love and War")
+book1 = Books("The Beginning of the End","Jose Curruilo", 45, "5th Edition")
+book2 = Books("Love and War", "Mark Twein", 700, "11th Edition")
 
 print(book2.title)
